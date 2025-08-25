@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import profileImage from "../profile.png";
 
 const HeroSection = styled.section`
   min-height: 100vh;
@@ -238,7 +239,7 @@ const Hero = () => {
           <ImageContainer>
             <ProfileImage>
               <ActualProfileImage
-                src={`${process.env.PUBLIC_URL}/profile.png`}
+                src={profileImage}
                 alt="Gonçalo Moura Profile Picture"
               />
             </ProfileImage>
