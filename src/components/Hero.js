@@ -238,7 +238,7 @@ const Hero = () => {
           <ImageContainer>
             <ProfileImage>
               <ActualProfileImage
-                src="/profile.png"
+                src={`${process.env.PUBLIC_URL}/profile.png`}
                 alt="Gonçalo Moura Profile Picture"
               />
             </ProfileImage>
