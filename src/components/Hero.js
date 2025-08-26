@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import profileImage from "../profile.png";
+import profileImage from "../profile.jpg";
 
 const HeroSection = styled.section`
   min-height: 100vh;
@@ -197,6 +197,8 @@ const ActualProfileImage = styled.img`
   object-fit: cover;
   z-index: 2;
   position: relative;
+  /* Add image optimization */
+  image-rendering: optimizeQuality;
 `;
 
 const FloatingElements = styled.div`
