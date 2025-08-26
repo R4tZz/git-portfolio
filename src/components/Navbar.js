@@ -25,6 +25,10 @@ const NavContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 480px) {
+    padding: 0 15px;
+  }
 `;
 
 const Logo = styled.div`
@@ -34,6 +38,10 @@ const Logo = styled.div`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  @media (max-width: 480px) {
+    font-size: 1.25rem;
+  }
 `;
 
 const NavLinks = styled.ul`
@@ -41,6 +49,7 @@ const NavLinks = styled.ul`
   list-style: none;
   gap: 2rem;
   margin: 0;
+  padding: 0;
 
   @media (max-width: 768px) {
     display: ${(props) => (props.isOpen ? "flex" : "none")};
@@ -55,6 +64,12 @@ const NavLinks = styled.ul`
     padding: 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     gap: 1rem;
+    z-index: 999;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem;
+    gap: 0.8rem;
   }
 `;
 

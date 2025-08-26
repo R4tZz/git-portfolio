@@ -6,12 +6,24 @@ import { useInView } from "react-intersection-observer";
 const ContactSection = styled.section`
   padding: 100px 0;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 60px 0;
+  }
 `;
 
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (max-width: 480px) {
+    padding: 0 15px;
+  }
 `;
 
 const SectionTitle = styled.h2`
@@ -47,6 +59,10 @@ const ContactContent = styled.div`
 
   @media (max-width: 768px) {
     padding: 0 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 10px;
   }
 `;
 

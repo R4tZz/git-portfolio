@@ -6,12 +6,24 @@ import { useInView } from "react-intersection-observer";
 const ProjectsSection = styled.section`
   padding: 100px 0;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 60px 0;
+  }
 `;
 
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (max-width: 480px) {
+    padding: 0 15px;
+  }
 `;
 
 const SectionTitle = styled.h2`
@@ -45,6 +57,11 @@ const FilterButtons = styled.div`
   gap: 1rem;
   margin-bottom: 3rem;
   flex-wrap: wrap;
+
+  @media (max-width: 480px) {
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
 `;
 
 const FilterButton = styled.button`
@@ -65,6 +82,11 @@ const FilterButton = styled.button`
     color: white;
     transform: translateY(-2px);
   }
+
+  @media (max-width: 480px) {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
 `;
 
 const ProjectGrid = styled.div`
@@ -74,6 +96,15 @@ const ProjectGrid = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 480px) {
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 `;
 

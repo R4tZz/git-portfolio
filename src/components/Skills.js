@@ -6,12 +6,24 @@ import { useInView } from "react-intersection-observer";
 const SkillsSection = styled.section`
   padding: 100px 0;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 60px 0;
+  }
 `;
 
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (max-width: 480px) {
+    padding: 0 15px;
+  }
 `;
 
 const SectionTitle = styled.h2`
@@ -48,6 +60,16 @@ const SkillCategories = styled.div`
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 `;
 
 const SkillCategory = styled.div`
@@ -63,6 +85,10 @@ const SkillCategory = styled.div`
     transform: translateY(-5px);
     border-color: rgba(102, 126, 234, 0.3);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem;
   }
 `;
 
@@ -84,6 +110,11 @@ const SkillGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.8rem;
+  }
 `;
 
 const SkillItem = styled.div`

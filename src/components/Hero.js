@@ -25,6 +25,12 @@ const HeroContent = styled.div`
     grid-template-columns: 1fr;
     text-align: center;
     gap: 2rem;
+    padding: 0 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 10px;
+    gap: 1.5rem;
   }
 `;
 
@@ -38,6 +44,10 @@ const Greeting = styled.h2`
   font-weight: 500;
   margin-bottom: 1rem;
   color: #667eea;
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const Name = styled.h1`
@@ -52,6 +62,11 @@ const Name = styled.h1`
   @media (max-width: 768px) {
     font-size: 2.5rem;
   }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
 `;
 
 const Title = styled.h3`
@@ -63,6 +78,12 @@ const Title = styled.h3`
   @media (max-width: 768px) {
     font-size: 1.25rem;
   }
+
+  @media (max-width: 480px) {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const Description = styled.p`
@@ -71,6 +92,17 @@ const Description = styled.p`
   margin-bottom: 3rem;
   color: #aaaaaa;
   max-width: 500px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const ButtonGroup = styled.div`
@@ -79,6 +111,11 @@ const ButtonGroup = styled.div`
   margin-top: 2rem;
   position: relative;
   z-index: 20;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
 `;
 
 const ResumeButton = styled.a`
@@ -107,6 +144,11 @@ const ResumeButton = styled.a`
 
   &:active {
     transform: translateY(-1px);
+  }
+
+  @media (max-width: 480px) {
+    padding: 12px 25px;
+    font-size: 0.95rem;
   }
 `;
 
@@ -140,6 +182,11 @@ const ProfileImage = styled.div`
   @media (max-width: 768px) {
     width: 300px;
     height: 300px;
+  }
+
+  @media (max-width: 480px) {
+    width: 250px;
+    height: 250px;
   }
 `;
 

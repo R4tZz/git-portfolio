@@ -6,12 +6,24 @@ import { useInView } from "react-intersection-observer";
 const AboutSection = styled.section`
   padding: 100px 0;
   background: #0a0a0a;
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 60px 0;
+  }
 `;
 
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (max-width: 480px) {
+    padding: 0 15px;
+  }
 `;
 
 const SectionTitle = styled.h2`
@@ -45,6 +57,10 @@ const MainContent = styled.div`
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
+  @media (max-width: 480px) {
+    gap: 1.5rem;
+  }
 `;
 
 const TextContent = styled.div`
@@ -66,6 +82,11 @@ const PersonalityGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 `;
 
 const PersonalityCard = styled.div`
