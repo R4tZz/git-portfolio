@@ -84,6 +84,12 @@ const ExperienceItem = styled.div`
   @media (max-width: 768px) {
     margin-left: 40px;
     justify-content: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-left: 35px;
+    margin-bottom: 2.5rem;
   }
 `;
 
@@ -105,6 +111,12 @@ const ExperienceCard = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.25rem;
+    border-radius: 12px;
   }
 `;
 
@@ -121,6 +133,12 @@ const TimelineDot = styled.div`
 
   @media (max-width: 768px) {
     left: 20px;
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: 480px) {
+    left: 15px;
+    transform: translateX(-50%);
   }
 `;
 
@@ -174,8 +192,9 @@ const Responsibilities = styled.ul`
 
 const Experience = () => {
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0.05, // Lower threshold for better mobile compatibility
     triggerOnce: true,
+    rootMargin: "0px 0px -30px 0px", // Trigger animation 30px before element comes into view
   });
 
   const experiences = [

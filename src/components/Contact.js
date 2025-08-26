@@ -188,8 +188,9 @@ const Footer = styled.footer`
 
 const Contact = () => {
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0.1,
     triggerOnce: true,
+    rootMargin: "0px 0px -50px 0px",
   });
 
   const contactInfo = [
